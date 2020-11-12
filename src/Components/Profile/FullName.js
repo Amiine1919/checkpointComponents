@@ -1,13 +1,14 @@
-const name={
+import React from "react";
+const user={
   firstName: 'John',
   lastName: 'Doe'
 };
 
 const FullName = () => {
   return (
-    <>
-      <h2>{name}</h2>
-    </>
+    <React.Fragment>
+      <h2>My name is {user.firstName} {user.lastName} </h2>
+    </React.Fragment>
   );
  };
  export default FullName;
